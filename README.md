@@ -1,4 +1,7 @@
 # AUTODOCS-WEBW
+THIS IS AN WEB APPLICATION FOR AUTO MATED FILE GENERATION FROM A TEMPLATE.
+
+
 create folder, app.js and open folder in terminal
 install the following modules:
 npm init
