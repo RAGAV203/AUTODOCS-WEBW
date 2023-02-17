@@ -14,7 +14,3 @@ to run:
 
 $ node app.js
 
-
-//jshint eversion:6
-const express = require("express");
-const bodyparser = require("body-parser");
