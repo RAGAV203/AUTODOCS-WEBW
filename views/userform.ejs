@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DOCS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="/">AUTODOCS</a></h1>
+						<nav >
+							<a href="#menu">Menu</a>
+							<a href="/login">LOGIN</a>
+					</nav>
+					</header>	
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							
+							<ul class="links">
+								<li><a href="/">Home</a></li>
+								<li><a href="/readtest">TEST</a></li>
+								<li><a href="/elements">TEST</a></li>
+								<li><a href="/login">Sign In</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+					
+					
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-file"></span></div>
+							<h2>FORM</h2>
+							<p></p>
+							<p></p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Enter data type for each variable</h2>
+										<form method="post" action="/userform">
+											<% for (let field in n1labels) { %>
+											  <div>
+												<label for="<%= field %>"><%= field.charAt(0).toUpperCase() + field.slice(1) %></label>
+												<% if (field === 'message') { %>
+												  <textarea id="<%= field %>" name="<%= field %>" placeholder="<%= n1labels[field] %>" required></textarea>
+												<% } else { %>
+												  <input type="text" id="<%= field %>" name="<%= field %>" placeholder="<%= n1labels[field] %>" required>
+												<% } %>
+											  </div>
+											<% } %>
+											<button type="submit">Submit</button>
+										  </form>
+										  
+										  
+									</div>
+								</div>
+							
+							</section>
+							
+
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major"></h2>
+							<p></p>
+							
+						</div>
+					</section>
+
+			</div>
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
